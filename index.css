@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+#home{
+    min-height: 100vh;
+    background-image: linear-gradient(to top, rgb(0, 204, 255) , black);
+    text-align: center;
+    padding-top: 20vh;
+    font-family: cursive;
+    font-weight: bolder;
+    color: bisque;
+}
+
+#about{
+    min-height: 50vh;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-image: linear-gradient(to top,rgb(13, 80, 97),rgb(0, 204, 255));
+    color: bisque;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#about h2{
+    text-align: center;
+    font-weight: bolder;
+}
+
+#team{
+    min-height: 50vh;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-image: linear-gradient(to bottom,rgb(13, 80, 97),rgb(0, 204, 255));
+}
+#team h2{
+    text-align: center;
+    font-weight: bolder;
+}
+#team li:hover{
+    color: brown;
+}
+
+#contact{
+    position: relative;
+    display: flex;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top,darkblue,rgb(0, 204, 255));
+}
+
+#contact .container{
+    position: relative;
+    min-height: 275px;
+    display: flex;
+    z-index: 1000;
+}
+#contact .container .contactinfo{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% -80px);
+    background: black;
+    z-index: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgb(0, 0, 0, 0.2);
+}
+#contact .container .contactinfo h2{
+    color: blanchedalmond;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    font-family: cursive;
+}
+#contact .container .contactinfo .info{
+    position: relative;
+    margin: 20px 0;
+}
+#contact .container .contactinfo .info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+#contact .container .contactinfo .info li span:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+}
+#contact .container .contactinfo .info li span:nth-child(1) i{
+    max-width: 100%;
+    filter: invert(1);
+    opacity: 0.5;
+}
+#contact .container .contactinfo .info li span:nth-child(2){
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+#contact .container .contactinfo .info li:hover span:nth-child(1) i,#contact .container .contactinfo .info li:hover span:nth-child(2){
+    opacity: 1;
+}
+#contact .container .sci{
+    position: relative;
+    display: flex;
+}
+#contact .container .sci li a{
+    text-decoration: none;
+    padding: 2%;
+    display: inline;
+}
+#contact .container .sci li a i{
+    filter: invert(1);
+    opacity: 0.5;
+}
+#contact .container .sci li:hover a i{
+    opacity: 1;
+}
