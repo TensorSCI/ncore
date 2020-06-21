@@ -211,7 +211,20 @@ label{
      text-decoration: solid;
      color: #16A085;
      cursor: pointer;
+ }
+ button[type="submit"]{
+     background-color: whitesmoke!important;
+     color:#16A085 !important;
+     font-weight: 700;
+     box-shadow: inset 0 0em 0em rgba(13, 80, 97, 0.466), 
+     0 0  0 0px rgb(255,255,255),
+     0.3em 0.3em 1em rgba(0, 0, 0, 0.692)!important;
  } 
+ button[type="submit"]:hover{
+    background-color: #16A085!important;
+    color: whitesmoke!important;
+    font-weight: 900;
+} 
 
 .contact-left button{
    background: #16A085;
@@ -233,7 +246,7 @@ label{
 }
 
 .contact-right h3{
-    color: white;
+    color: #16A085;
     font-weight: 600;
     margin-bottom: 30px;
 }
