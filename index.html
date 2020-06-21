@@ -21,9 +21,39 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <style>
+       #swiper {
+      background: transparent;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+      min-height: 50vh;
+    }
+
+    .swiper-container {
+      width: 100%;
+      padding-bottom: 100px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+      background: black;
+      -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006)
+    }
+      
+    </style>
     <script>
         // Set the date we're counting down to
-          var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+          var countDownDate = new Date("Jun 24, 2020 0:0:0").getTime();
 
           // Update the count down every 1 second
           var x = setInterval(function() {
@@ -54,7 +84,7 @@
 </head>
 <body>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style="background-color: rgba(0, 0, 0, 0.541);">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style="background-image: linear-gradient(to bottom,black,rgba(0, 0, 0, 0.5));">
         <a class="navbar-brand" href="#"><img class="img-responsive" src="images/CLOCK TOWER WHITE-2.png" style="height: 40px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,6 +100,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#team">TEAM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">GALLERY</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">CONTACT US</a>
@@ -90,7 +123,12 @@
                 <a class="nav-link waves-effect waves-light">
                   <i class="fab fa-facebook-f"></i>
                 </a>
-              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light">
+                <i class="far fa-envelope"></i>
+              </a>
+          </li>
           </ul>
         </div>
       </nav>
@@ -109,18 +147,21 @@
         <div class="row">
           <div class="col-md-6 col-12" style="text-align: center;padding-top: 1%;padding-bottom: 1%;">
             <h3>AN</h3>
-            <img src="images/IMPRINTS LOGO 1.jpeg" class="img-responsive" style="height: 150px;border-radius: 5px;">
+            <img src="images/IMPRINTS LOGO 1.png" class="img-responsive" style="height: 150px;border-radius: 5px;">
             <h3>FUNDRAISER</h3>
           </div>
           <div class="col-md-6 col-12" style="text-align: justify;padding-top: 3%;padding-bottom: 1%;padding-right: 2%;padding-left: 2%;">
+            <p>
+              Ncore is an All India Online NEET Mock Exam conducted by Calicut Medical College Union 2020 for the current medical entrance aspirants. 
 
-            <p>
-              Tensors in association with the Indian Medical Association, Kerala conducted the DeCov Ideathon. 
-              COVID-19 has struck every corner of this world and the entire human race is under strings of this deadly pandemic.
-            </p>
-            <p>
-              Tensors in association with the Indian Medical Association, Kerala conducted the DeCov Ideathon. 
-              COVID-19 has struck every corner of this world and the entire human race is under strings of this deadly pandemic.
+              IMPRINTS is a charity organization run by Independents College Union in association with the Department of Pediatrics dedicated to collecting funds and supplying medical aids to children suffering from diseases such as Type 1 Diabetes, Wilson's disease, Thalassemia and other rare genetic disorders. A monthly expense of approximately 1 lakh is required for running IMPRINTS and proving aid for the numerous families we serve.  These expenses used to be met by mass collection activities from the public as well as IMRPINTS  fund raiser events held at the college every year. Owing to the Corona pandemic and lockdown restrictions these activities have been arrested.  
+
+              The current NEET aspirants lack proper exam prep and are in dire need of quality coaching from reliable experts. To clear NEET is a  dream of many students & IMPRINTS is a hope to many Children . 
+
+              Ncore is an initiative aimed at collaborating and meeting these two needs.  
+
+              The Online mock test will consist of high grade questions prepared by reliable and experienced students of Calicut Medical College who have already cleared the entrance exam securing top positions. 
+              On behalf of over 80 families we serve ; we kindly request you to co-operate with this altruistic initiative.
             </p>
           </div>
         </div>
@@ -131,7 +172,7 @@
       <div class="container my-5 p-5 z-depth-1" style="background-image: linear-gradient(to bottom,grey,lightgrey);">
 
 
-        <section class="text-center dark-grey-text">
+        <section class="text-center ">
           
           <h2 >OUR TEAM</h2>
 
@@ -144,8 +185,8 @@
                 <img src="images/IMPRINTS LOGO.jpeg" class="img-fluid mx-auto" alt="smaple image">
               </div>
               <h6 class="font-weight-bold">NAME</h6>
-              <small class="text-muted">POST</small>
-              <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0 text-muted">
+              <small>POST</small>
+              <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
                 <li><i class="fab fa-twitter mx-2"></i></li>
                 <li><i class="fab fa-facebook-f mx-2"></i></li>
                 <li><i class="fab fa-instagram mx-2"></i></li>
@@ -156,8 +197,8 @@
                 <img src="images/IMPRINTS LOGO.jpeg" class="img-fluid mx-auto" alt="smaple image">
               </div>
               <h6 class="font-weight-bold">NAME</h6>
-              <small class="text-muted">POST</small>
-              <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0 text-muted">
+              <small>POST</small>
+              <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
                 <li><i class="fab fa-twitter mx-2"></i></li>
                 <li><i class="fab fa-facebook-f mx-2"></i></li>
                 <li><i class="fab fa-instagram mx-2"></i></li>
@@ -168,8 +209,8 @@
                 <img src="images/IMPRINTS LOGO.jpeg" class="img-fluid mx-auto" alt="smaple image">
               </div>
               <h6 class="font-weight-bold">NAME</h6>
-              <small class="text-muted">POST</small>
-              <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0 text-muted">
+              <small>POST</small>
+              <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
                 <li><i class="fab fa-twitter mx-2"></i></li>
                 <li><i class="fab fa-facebook-f mx-2"></i></li>
                 <li><i class="fab fa-instagram mx-2"></i></li>
@@ -180,8 +221,8 @@
                 <img src="images/IMPRINTS LOGO.jpeg" class="img-fluid mx-auto" alt="smaple image">
               </div>
               <h6 class="font-weight-bold">NAME</h6>
-              <small class="text-muted">POST</small>
-              <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0 text-muted">
+              <small>POST</small>
+              <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
                 <li><i class="fab fa-twitter mx-2"></i></li>
                 <li><i class="fab fa-facebook-f mx-2"></i></li>
                 <li><i class="fab fa-instagram mx-2"></i></li>
@@ -193,6 +234,32 @@
       </div>
     </div>
 
+    <div class="row" id="gallery">
+      <div class="col-md-12 col-12" id="swiper">
+        <h2>NCORE GALLERY</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/Imprints gallery/img1.png" class="img-responsive" style="min-height: 100%;width: 100%;"> </div>
+            <div class="swiper-slide"><img src="images/Imprints gallery/img2.jpg" class="img-responsive" style="min-height: 100%;width: 100%;"> </div>
+            <div class="swiper-slide"><img src="images/Imprints gallery/img3.jpg" class="img-responsive" style="min-height: 100%;width: 100%;"> </div>
+            <div class="swiper-slide"><img src="images/Imprints gallery/img4.jpg" class="img-responsive" style="min-height: 100%;width: 100%;"> </div>
+            <div class="swiper-slide"><img src="images/Imprints gallery/img5.jpg" class="img-responsive" style="min-height: 100%;width: 100%;"> </div>
+            <div class="swiper-slide"><img src="images/Imprints gallery/img6.jpg" class="img-responsive" style="min-height: 100%;width: 100%;"> </div>
+            <div class="swiper-slide"><img src="images/Imprints gallery/img7.jpg" class="img-responsive" style="min-height: 100%;width: 100%;"> </div>
+            <div class="swiper-slide"><img src="images/Imprints gallery/img8.jpg" class="img-responsive" style="min-height: 100%;width: 100%;"> </div>
+            <div class="swiper-slide"><img src="images/Imprints gallery/img9.jpg" class="img-responsive" style="min-height: 100%;width: 100%;"> </div>
+            <div class="swiper-slide"><img src="images/Imprints gallery/img10.jpg" class="img-responsive" style="min-height: 100%;width: 100%;"> </div>
+            <div class="swiper-slide"><img src="images/Imprints gallery/img11.jpg" class="img-responsive" style="min-height: 100%;width: 100%;"> </div>
+            <div class="swiper-slide"><img src="images/Imprints gallery/img12.jpg" class="img-responsive" style="min-height: 100%;width: 100%;"> </div>
+            <div class="swiper-slide"><img src="images/Imprints gallery/img13.png" class="img-responsive" style="min-height: 100%;width: 100%;"> </div>
+            <div class="swiper-slide"><img src="images/Imprints gallery/img14.png" class="img-responsive" style="min-height: 100%;width: 100%;"> </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
     <div id="contact">
       <div class="container">
         <div class="row">
@@ -201,28 +268,71 @@
                 <h2>CONTACT INFO</h2>
                 <ul class="info">
                   <li>
-                    <span><i class="fas fa-map-marker-alt"></i></span>
-                    <span>YOUR ADDRESS</span>
+                    <span><i class="fas fa-map-marker-alt"></i><p>ADDRESS</p></span>                  
                   </li>
                   <li>
-                    <span><i class="fab fa-google"></i></span>
-                    <span>your mail</span>
+                    <span><i class="fab fa-google"></i><p>MAIL</p></span>
                   </li>
                   <li>
-                    <span><i class="fas fa-mobile-alt"></i></span>
-                    <span>phone number</span>
+                    <span><i class="fas fa-mobile-alt"></i><p>PHONE</p></span>
                   </li>
-                </ul>    
+                </ul>
+                <ul class="sci">
+                  <li><i class="fab fa-twitter-square fa-2x"></i></li>
+                  <li><i class="fab fa-instagram fa-2x"></i></li>
+                  <li><i class="fab fa-facebook fa-2x"></i></li>
+                  <li><i class="fab fa-linkedin fa-2x"></i></li>
+                  <li><i class="fas fa-envelope-square fa-2x"></i></li>
+                </ul> 
             </div>
           </div>
+          <div class="col-md-6 col-12"  style=" padding: 2%;">
+            <div class="tensors">
+              <h2 style="font-size: 20px;
+              font-weight: bold;
+              font-family: cursive;
+              color: rgb(22, 160, 132);margin-top: 5%;">
+                IN ASSOCIATION WITH
+              </h2>
+              <h2 style="text-align: center;margin-top: 5%;">
+                <img class="img-responsive" src="images/logof2.png" style="height: 100px;">
+              </h2>
+              <p style="text-align: right;margin-top: 5%;">
+                  <a href="https://www.instagram.com/tensors_official/" id="facebook_button" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>&emsp;&emsp;
+                  <a href="https://www.facebook.com/tensorsofficial" id="facebook_button" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>&emsp;&emsp;
+                  <a href="https://www.linkedin.com/company/53201198" id="facebook_button" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>&emsp;&emsp;                  
+                  <a href="mailto:tensorsofficial@gmail.com" id="facebook_button" target="_blank"><i class="fas fa-envelope-square fa-2x"></i></a>
+              </p>
+            </div>
+          </div>  
         </div>
       </div>
-      
     </div>
       
 
 
-
+   
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 20,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        },
+        loop:true,
+        autoplay:{
+          delay:500,
+          disableOnInteraction:false,
+        }
+      });
+    </script>
 
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
