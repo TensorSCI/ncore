@@ -4,7 +4,7 @@
     
 }
 body{
-    background-image: repeating-linear-gradient(45deg, #3f87a6, grey 15%, black 20%)!important;
+    background-image: repeating-linear-gradient(45deg, #3f87a6, rgb(128, 128, 128) 15%, black 20%)!important;
     font-family: cursive;
 }
 
