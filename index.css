@@ -129,7 +129,7 @@ body{
     opacity: 1;
 }
 .navbar-nav li:hover{
-    border-bottom: rgb(13, 80, 97);
+    border-bottom: whitesmoke;
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-right-radius: 2px;
