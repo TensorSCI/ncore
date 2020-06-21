@@ -7,11 +7,11 @@
        <meta content="The official website of TENSORS, a team by the Students' Forum of IIT Madras" name="description">
    <meta
       content="iit, iitm, iit madras, tensors, Mentorship, jee, consulting, consultation, big bro program" name="keywords">
-   <meta property="og:title" content="NCORE_OFFICIAL">
+   <meta property="og:title" content="NCORE_REGISTRATION">
    <meta property="og:description"
       content="From JEE to JoSSA, We will be by your side, Every Step of the Way!">
    <meta property="og:image" content="http://tensors.in/assets/images/sharelogo.png">
-    <title>NCORE_OFFICIAL</title>
+    <title>NCORE_REGISTRATION</title>
     <link rel="stylesheet" href="register.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -21,6 +21,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+
+
 
 </head>
 <body>
@@ -39,28 +41,39 @@
                             <div class="input-row">
                                 <div class="input-group">
                                     <label for="">First Name</label>
-                                    <input type="text" name="entry.993117469" id="entry.993117469" placeholder="" required>
+                                    <input type="text" placeholder="" required>
                                 </div>
                                 <div class="input-group">
                                     <label for="">Last Name</label>
-                                    <input type="text" name="entry.1202415337" id="entry.1202415337" placeholder=""
+                                    <input type="text" placeholder=""
                                         required>
                                 </div>
                             </div>
                             <div class="input-row">
                                 <div class="input-group">
                                     <label for="">Email</label>
-                                    <input type="email" name="entry.566797949" id="entry.566797949" placeholder="" required>
+                                    <input type="email" placeholder="" required>
                                 </div>
                                 <div class="input-group">
                                     <label for="">Phone Number</label>
-                                    <input type="text" name="entry.2000852851" id="entry.2000852851" placeholder=""
+                                    <input type="text" placeholder=""
                                         required>
                                 </div>
                             </div>
-                            <label>Address</label>
-                            <textarea rows="5" name="entry.1976556550" id="entry.1976556550" placeholder=""
-                                required></textarea>
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <label for="">Coaching Institute, (if any)</label>
+                                    <input type="email" placeholder="" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="">Number of Attempts :</label>
+                                    <select>
+                                        <option value="1">1 Attempt</option>
+                                        <option value="2">2 Attempts</option>
+                                        <option value="3">3 Attempts</option>
+                                    </select>
+                                </div>
+                            </div>
                             <div class="inputfield terms" style="color: blanchedalmond;">
                                 <input type="checkbox" name="checkbox" id="checkbox" required>
                                 <label for="checkbox">
@@ -205,40 +218,14 @@
             }
         }
     </script>
-    <script>
-        $(document).ready(function(){
-                    //Show Coaching Name
-        $('.ans').on('change', function () {
-            if ($(this).val() === "yes") {
-                $("#ifYes").show();
-            }
-            else {
-                $("#ifYes").hide();
-            }
-        });
+        <script type="text/javascript">
+            // Material Select Initialization
+            $(document).ready(function() {
+            $('.mdb-select').materialSelect();
+            });
+        </script>
 
-
-        //Smooth Scroll
-        $('a[href*="#section"]').on('click', function () {
-            $('html, body').animate({
-                scrollTop: $($(this).attr('href')).offset().top - 100
-            }, 2000);
-        });
-
-        //Form Registration
-        $('#registerForm').on('submit', function (e) {
-
-            //Show Alert
-            document.querySelector('.alert').style.display = "block";
-
-            //Hide alert after 4 sec
-            setTimeout(function () {
-                document.querySelector('.alert').style.display = "none";
-            }, 4000);
-
-        });
-        });
-    </script>
+       
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
