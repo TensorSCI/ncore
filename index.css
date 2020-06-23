@@ -124,6 +124,10 @@ body{
     padding: 2%;
     text-align: right;
 }
+#contact .contactinfo .sci li i{
+    color: whitesmoke;
+    opacity: 0.5;
+}
 #contact .contactinfo .sci li:hover i{
     color: cornsilk;
     opacity: 1;
