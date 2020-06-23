@@ -7,13 +7,27 @@ body{
     background-image: repeating-linear-gradient(45deg, #3f87a6, rgb(128, 128, 128) 15%, black 20%)!important;
     font-family: cursive;
 }
-
+.map-container-6{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container-6 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    border-radius: 10px;
+    }
 #home{
     min-height: 100vh;
-    background-image: url(./images/bg.png) ;
+    /*background-image: url(./images/bg.png) ;
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: right;
-    background-blend-mode: lighten;
+    background-blend-mode: lighten;*/
     text-align: center;
     padding-top: 20vh;
     font-family: cursive;
@@ -79,7 +93,7 @@ body{
     background-color: rgba(0, 0, 0, 0.493);
 }
 #contact .contactinfo{
-    width: 60%;
+    width: 100%;
     padding: 2%;
     height: 100%;
 }
@@ -95,7 +109,7 @@ body{
     padding-left: 2%;
 }
 #contact .contactinfo .info li{
-    display: flex;
+    display: inline-block;
     margin-left: 2%;
 }
 #contact .contactinfo .info li span:nth-child(1) i{
@@ -142,8 +156,7 @@ body{
 }
 #contact .tensors{
     padding: 3%;
-    height: 100%;
-    background-color: #141c5a59;
+
 }
 #facebook_button > i{color: rgb(22, 160, 132);padding: 2px;}
 #facebook_button > i:hover{color: #141c5a;}
