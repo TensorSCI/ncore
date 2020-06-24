@@ -9,7 +9,7 @@ body{
 }
 @font-face {
     font-family: Candara;
-    src: url(Candara.ttf);
+    src: url(font/Candara.ttf);
   }
   @font-face {
     font-family: Cartoonist;
