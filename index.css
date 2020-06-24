@@ -11,11 +11,15 @@ body{
 @font-face {
     font-family: Candara;
     src: url(font/Candara.ttf);
-  }
-  @font-face {
+}
+@font-face {
     font-family: Cartoonist;
     src: url(font/Qdbettercomicsans-jEEeG.ttf);
-  }
+}
+@font-face {
+    font-family: LemonMilk;
+    src: url(font/LEMONMILK-MediumItalic.otf)
+}
 
   #gallery::before,
   #about::before,
@@ -48,10 +52,10 @@ body{
     background-position: right;
     background-blend-mode: lighten;*/
     text-align: center;
-    font-family: Cartoonist;
+    font-family: LemonMilk;
     letter-spacing: 2px;
     font-weight: 900;
-    color: bisque;
+    color: whitesmoke;
 
 }
 
@@ -62,7 +66,7 @@ body{
                     inset 0 3em 3em rgba(13, 80, 97, 0.466), 
                           0 0  0 0px rgb(255,255,255),
                           0.3em 0.3em 1em rgb(0, 0, 0);
-    color: bisque;
+    color: whitesmoke;
     font-style: italic;
     font-family: Candara;
     font-size: larger;
@@ -72,7 +76,7 @@ body{
     font-family: Candara;
     text-align: center;
     font-weight: bolder;
-    color: blanchedalmond;
+    color: whitesmoke;
     padding-top: 2%;
     padding-bottom: 2%;
     font-size: xx-large;
@@ -82,7 +86,7 @@ body{
     min-height: 100vh;
     padding-top: 1%;
     padding-bottom: 1%;
-    color: blanchedalmond;
+    color: whitesmoke;
     font-family: Candara;
 }
 #team h2{
@@ -112,7 +116,7 @@ body{
     font-family: Candara;
     text-align: center;
     font-weight: bolder;
-    color: blanchedalmond;
+    color: whitesmoke;
     padding-top: 2%;
     padding-bottom: 2%;
 }
