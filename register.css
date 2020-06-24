@@ -147,7 +147,7 @@ section{
     flex-basis: 45%;
 }
 .input-row .input-group select{
-    background-color: transparent;font-family: cursive;padding: 0;text-align: left;color: blanchedalmond;
+    background-color: transparent;font-family: Candara;padding: 0;text-align: left;color: blanchedalmond;
     border-color: #16A085;border-style: solid;border-width: 2px;padding: 1%;border-radius: 10px;
 }
 .input-row .input-group select option{

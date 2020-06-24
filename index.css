@@ -5,17 +5,18 @@
 }
 body{
     background-image: repeating-linear-gradient(45deg, #3f87a6, rgb(128, 128, 128) 15%, black 20%)!important;
-    font-family: cursive;
+    font-family: Candara;
 }
-#about::before,
-#gallery::before,
-#contact::before {
-display: block;
-content: " ";
-margin-top: -65px;
-height: 65px;
-visibility: hidden;
-}
+@font-face {
+    font-family: Candara;
+    src: url(Candara.ttf);
+  }
+  @font-face {
+    font-family: Cartoonist;
+    src: url(font/Qdbettercomicsans-jEEeG.ttf);
+  }
+
+
 #snow_fall{position: absolute; width: 100%; height: 100vh; background-repeat: no-repeat; background-size: cover; background-color: transparent; background-position: 50% 50%; z-index: -1000;}
 .map-container-6{
     overflow:hidden;
@@ -39,8 +40,9 @@ visibility: hidden;
     background-position: right;
     background-blend-mode: lighten;*/
     text-align: center;
-    font-family: cursive;
-    font-weight: bolder;
+    font-family: Cartoonist;
+    letter-spacing: 2px;
+    font-weight: 900;
     color: bisque;
 
 }
@@ -56,7 +58,9 @@ visibility: hidden;
                           0.3em 0.3em 1em rgb(0, 0, 0);
     color: bisque;
     font-style: italic;
-    font-family: cursive;
+    font-family: Candara;
+    font-size: larger;
+    font-weight: 500;
 }
 #about h2{
     text-align: center;
@@ -68,7 +72,7 @@ visibility: hidden;
     padding-top: 1%;
     padding-bottom: 1%;
     color: blanchedalmond;
-    font-family: cursive;
+    font-family: Candara;
 }
 #team h2{
     text-align: center;
@@ -89,13 +93,17 @@ visibility: hidden;
 #gallery{
     min-height: 50vh;
     width: 100%;
-    font-family: cursive;
+    font-family: Candara;
+    font-style: italic;
+    font-weight: 500;
 }
 #gallery h2{
+    font-family: Candara;
     text-align: center;
     font-weight: bolder;
     color: blanchedalmond;
-    font-family: cursive;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 
@@ -123,22 +131,23 @@ visibility: hidden;
     margin-left: 2%;
 }
 #contact .contactinfo .info li span:nth-child(1) i{
-    margin-left:3%;
+    margin-left:2%;
     color: whitesmoke;
     opacity: 0.5;
 }
-#contact .contactinfo .info li span:nth-child(1) p{
+#contact .contactinfo .info li p{
     padding: 1%;
     color: whitesmoke;
     opacity: 0.5;
     margin-left: 3%;
     font-size: large;
     font-weight: bold;
-    align-items: flex-start;
+    text-align: left;
 }
 #contact .contactinfo .info li:hover span:nth-child(1) i,
-#contact .contactinfo .info li:hover span:nth-child(1) p{
+#contact .contactinfo .info li:hover p{
     opacity: 1;
+    text-align: left;
 }
 #contact .contactinfo .sci {
     text-align: right;
