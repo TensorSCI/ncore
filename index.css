@@ -17,9 +17,9 @@ body{
     src: url(font/Qdbettercomicsans-jEEeG.ttf);
   }
 
-  #gallery:before,
-  #about:before,
-  #contact:before {
+  #gallery::before,
+  #about::before,
+  #contact::before{
     display: block;
     content: "";
     height: 40px;
@@ -41,7 +41,7 @@ body{
     border-radius: 10px;
     }
 #home{
-    min-height: 100vh;
+    min-height: 106vh;
     /*background-image: url(./images/bg.png) ;
     background-size: auto;
     background-repeat: no-repeat;
