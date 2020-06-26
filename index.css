@@ -194,7 +194,6 @@ body{
 }
 #facebook_button > i{color: rgb(22, 160, 132);padding: 2px;}
 #facebook_button > i:hover{color: #141c5a;}
-.gototop{position: fixed;bottom: 20px;right: 20px;background: rgba(0,0,0,0.1);padding: 10px;color: #fff;}.gototop i{line-height: 0.5em;}
 
 .reg_button{
     border: none;
