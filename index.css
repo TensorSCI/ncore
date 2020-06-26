@@ -194,3 +194,53 @@ body{
 }
 #facebook_button > i{color: rgb(22, 160, 132);padding: 2px;}
 #facebook_button > i:hover{color: #141c5a;}
+.gototop{position: fixed;bottom: 20px;right: 20px;background: rgba(0,0,0,0.1);padding: 10px;color: #fff;}.gototop i{line-height: 0.5em;}
+
+.reg_button{
+    border: none;
+    display: block;
+    position: relative;
+    padding: 0.5em 2.2em;
+    font-size: 30px;
+    font-family: Cartoonist;
+    font-weight: 900;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    color: whitesmoke;
+    overflow: hidden;
+}
+.reg_button span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+}
+.reg_button span::before{
+    content: "";
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .3s;
+}
+.reg_button:hover span::before, .reg_button:focus span::before{
+    transform: translate(-50%,-50%) rotate(-90deg);
+    width: 100%;
+    height: 500%;
+    background: whitesmoke;
+    opacity: 0.5;
+    border-radius: 50px;
+}
+.reg_button:hover, .reg_button:focus{
+    color: black;
+}
+.reg_button:hover i,.reg_button:focus i{
+    color: transparent;
+}
