@@ -16,7 +16,7 @@ particlesJS('snow_fall',
   {
     "particles": {
       "number": {
-        "value": 3000,
+        "value": 300,
         "density": {
           "enable": true,
           "value_area": 800
@@ -26,7 +26,7 @@ particlesJS('snow_fall',
         "value": "#3f87a6"
       },
       "shape": {
-        "type": "circle",
+        "type": "",
         "stroke": {
           "width": 0,
           "color": "#000000"
@@ -61,7 +61,7 @@ particlesJS('snow_fall',
         }
       },
       "line_linked": {
-        "enable": false,
+        "enable": true,
         "distance": 150,
         "color": "#3f87a6",
         "opacity": 0.5,
