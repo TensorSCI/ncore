@@ -103,10 +103,9 @@
         </div>
       </nav>
 
-      
-
     <div id="home">
       <div id="snow_fall"></div>
+
         <h2 style="padding-top: 15vh;">COLLEGE UNION 2020<br><img class="img-responsive" src="images/COLLEGE union LOGO-1.png" style="height: 50px;"><br>PRESENTS</h2>
         <h1>NCORE</h1>
         <h3>ONLINE NEET MOCK TEST</h3>
@@ -115,16 +114,67 @@
           <img class="img-fluid" src="images/PicsArt_06-18-10.32.02.png" style="height:auto;">
         </h3>          
         </div>
-        <h3>Registration Opening Soon</h3>
 
-        <!--<center>
-          <a href="https://ncore.tensors.in" target="_blank">
-              <button class="reg_button">
+        <center>
+              <button class="reg_button" data-toggle="modal" data-target="#centralModalSuccess">
                 <i class="fas fa-angle-double-right"></i>&emsp;REGISTER HERE&emsp;<i class="fas fa-angle-double-left"></i>
                 <span></span>
               </button>  
-          </a>        
-        </center>-->
+        </center>
+        <!--Modal-->
+        <div class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-info modal-lg" role="document" style="width: 100%;">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="heading lead">PLEASE READ THE FOLLOWING INFORMATION REGARDING REGISTRATION CAREFULLY!</p>
+
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" class="white-text">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="images/123.png" alt="" style="height: 200px;" class="img-fluid">
+              <div style="text-align: justify;padding: 2%;font-size: small;font-style: unset;">
+                <ol>
+                  <li>
+                    You have to register for the exam on NCORE website. The link for the same will be given once you have read all these information and tick mark the check box.                    
+                  </li><br>
+                  <li>
+                    After signing up, go to the offered courses tab and click on  'NCORE Online NEET Mock Test(Coming Soon)'. Then click enroll for free.
+                  </li><br>
+                  <li>
+                    Once you complete the registration, you need to pay a registration amount of Rs.100 to the following number through google pay.
+                    <br><p style="text-align: center;color: darkblue;">9207555913 </p>                          
+                  </li><br>
+                  <li>
+                    Once you made the payment you need to fill the following Google form and upload the proof of transaction there.
+                    <br><p style="text-align: center;"><a href="https://forms.gle/VLKeFynvTKdxzNwr7" target="_blank" style="color: darkblue;font-family: Candara; font-weight: bolder;font-size: large;">https://forms.gle/VLKeFynvTKdxzNwr7</a></pre>
+                  </li><br>
+                  <li>
+                    The proof of transaction should contain the UPI Transaction ID, Google Transaction ID and your UPI ID along with date and time of payment.(it can be in the form of a screenshot).                    
+                  </li><br>
+                  <li>
+                    In case of any queries or problems like unavailability of Google pay account, Please get in touch with us before registering.                  
+                  </li>
+                </ol>
+              </div>
+              <div>
+                <input type="checkbox" id="terms_and_conditions" value="1" onclick="terms_changed(this)" />
+                <label for="terms_and_conditions" style="color: rgb(201, 26, 26);">I have read and understood the above instructions.</label>
+              </div>
+            </div>
+
+            <div class="modal-footer justify-content-center">
+              <button id="submit_button" class="btn btn-outline-info waves-effect"  onclick="window.location.href='https://ncore.tensors.in';" disabled>Proceed to Registration</button>
+            </div>
+            <div class="footer" style="background-color: transparent;height: 5vh;border-top: solid;vertical-align: middle;">
+              <a href="http://tensors.in"><span style="padding-top: 1vh;color: rgb(22, 160, 132);">POWERED BY TENSORSCI</span>&emsp;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!--end of modal-->
 
     </div>
 
@@ -330,7 +380,7 @@
 
 
   <div class="footer-copyright text-center py-3" style="background-color: transparent;padding: 0;"><i class="fas fa-copyright"></i>&emsp;2020 Copyright
-    <a href="http://tensors.in">&emsp;POWERED BY TENSORSCI&emsp;<img src="images/l.png" class="img-responsive" style="height: 40px;"></a>
+    <a href="http://tensors.in">&emsp;POWERED BY TENSORSCI&emsp;<img src="images/l.png" class="img-fluid" style="height: 40px;"></a>
   </div>
 
 
@@ -341,6 +391,20 @@
 
    
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+//JavaScript function that enables or disables a submit button depending
+//on whether a checkbox has been ticked or not.
+function terms_changed(termsCheckBox){
+    //If the checkbox has been checked
+    if(termsCheckBox.checked){
+        //Set the disabled property to FALSE and enable the button.
+        document.getElementById("submit_button").disabled = false;
+    } else{
+        //Otherwise, disable the submit button.
+        document.getElementById("submit_button").disabled = true;
+    }
+}
+    </script>
     <script>
       var swiper = new Swiper('.swiper-container', {
         effect: 'coverflow',
