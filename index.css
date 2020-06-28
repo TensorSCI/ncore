@@ -201,14 +201,15 @@ body{
     display: block;
     position: relative;
     padding: 0.5em 2.2em;
-    font-size: 30px;
+    font-size: 25px;
     font-family: Cartoonist;
     font-weight: 900;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.541);
     cursor: pointer;
     user-select: none;
     color: whitesmoke;
     overflow: hidden;
+
 }
 .reg_button span{
     position: absolute;
@@ -240,6 +241,7 @@ body{
 }
 .reg_button:hover, .reg_button:focus{
     color: black;
+    background-color: transparent;
 }
 .reg_button:hover i,.reg_button:focus i{
     color: transparent;
