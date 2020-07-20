@@ -282,3 +282,8 @@ body{
 .reg_button:hover i,.reg_button:focus i{
     color: transparent;
 }
+.btn-group .btn{
+    color: whitesmoke;
+    font-weight: lighter;
+    font-size: small;
+}
