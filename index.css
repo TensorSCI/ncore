@@ -23,7 +23,8 @@ body{
 
   #gallery::before,
   #about::before,
-  #contact::before{
+  #contact::before,
+  #smiles::before{
     display: block;
     content: "";
     height: 40px;
@@ -83,16 +84,33 @@ body{
     font-size: xx-large;
 }
 
-#team{
-    min-height: 100vh;
-    padding-top: 1%;
-    padding-bottom: 1%;
+#smiles{
+    min-height: 50vh;
     color: whitesmoke;
+    font-style: italic;
     font-family: Candara;
+    font-size: larger;
+    font-weight: 500;
+    padding: 2%;
 }
-#team h2{
+#smiles h2{
+    font-family: Candara;
     text-align: center;
     font-weight: bolder;
+    color: whitesmoke;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: xx-large;
+}
+#smiles .smiles_bg{
+    background-image: url(./images/smiles1-removebg-preview.png);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+#smiles .smiles_bg img{
+    mix-blend-mode: multiply;
 }
 #team li:hover{
     color: brown;
@@ -113,8 +131,8 @@ body{
     font-style: italic;
     font-weight: 500;
     overflow-x: hidden;
-
 }
+
 .box{
     position: relative;
     width: 200px;
@@ -238,7 +256,7 @@ body{
     display: block;
     position: relative;
     padding: 0.5em 2.2em;
-    font-size: 25px;
+    font-size: 20px;
     font-family: Cartoonist;
     font-weight: 900;
     background: rgba(0, 0, 0, 0.541);
@@ -280,7 +298,7 @@ body{
     color: black;
     background-color: transparent;
 }
-.reg_button:hover i,.reg_button:focus i{
+.reg_button:hover i, .reg_button:focus i{
     color: transparent;
 }
 .btn-group .btn{
