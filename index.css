@@ -102,16 +102,7 @@ body{
     padding-bottom: 2%;
     font-size: xx-large;
 }
-#smiles .smiles_bg{
-    background-image: url(./images/smiles1-removebg-preview.png);
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-}
-#smiles .smiles_bg img{
-    mix-blend-mode: multiply;
-}
+
 #team li:hover{
     color: brown;
 }
@@ -260,8 +251,6 @@ body{
     font-family: Cartoonist;
     font-weight: 900;
     background: rgba(0, 0, 0, 0.541);
-    cursor: pointer;
-    user-select: none;
     color: whitesmoke;
     overflow: hidden;
 
